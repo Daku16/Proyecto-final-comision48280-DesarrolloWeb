@@ -1,0 +1,91 @@
+#main__aboutMe{
+    @include main;
+    .imagen{
+        display: flex;
+        justify-content: center;
+        .contenedor__imagen{
+            display: flex;
+            position: relative;
+            height: 30rem;
+            margin-bottom: 5rem;
+            &:hover{
+                .fondo{
+                    transform: translate(1rem, 1rem);
+                    border: solid $color-principal1;
+                }
+                .fondo__imagen{
+                    z-index: 2;
+                }
+                .imagen__aboutMe{
+                    border: solid $color-principal2;
+                    z-index: 3;
+                }
+            }
+            .imagen__aboutMe{
+                width: 25rem;
+                height: 30rem;
+                border: solid $color-principal1;
+                border-radius: 1rem;
+                margin-bottom: 5rem;
+                z-index: 2;
+                transition: .7s;
+            }
+            .fondo__imagen{
+                width: 25rem;
+                height: 30rem;
+                opacity: .35;
+                background-color: $color-principal1;
+                position: absolute;
+                z-index: 3;
+                border-radius: 1rem;
+                transition: .7s ease-in-out;
+            }
+            .fondo{
+                width: 25rem;
+                height: 30rem;
+                border: solid $color-principal2;
+                border-radius: 1rem;
+                position: absolute;
+                transform: translate(2rem, 2rem);
+                z-index: 1;
+                transition: .7s;
+            }
+        }
+    }
+    .aboutMe__parrafo{
+        text-align: center;
+        padding: 5rem;
+        
+        h1{
+            padding-bottom: 3rem;
+            font-size: 7.2rem; 
+            background: linear-gradient(270deg, #3f5efb, #fc466b);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        div{
+            p{
+                background: linear-gradient(270deg, $color-principal1, white);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #main__aboutMe{
+        flex-direction: row;
+        .imagen{
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .aboutMe__parrafo{
+            margin: auto 0;
+            padding-right: 0;
+            padding-left: 10rem;
+        }
+    }
+}

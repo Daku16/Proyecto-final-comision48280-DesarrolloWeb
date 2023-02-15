@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a simple example of the job of the web developer 'David Gutierrez'">
+    <meta name="keywords" content="HTML, HyperText, CSS, animation">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/Logo-min.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>David Gutierrez | Example</title>
+</head>
+<body>
+    <header id="home__cabecera" class="container row text-center">
+        <div class="div__logo col-sm-6">
+            <a class="logo" href="../index.html"><img src="../img/Logo.png" alt="logo"></a>
+        </div>
+        <div class="div__btn-back col-sm-6 align-self-center d-block">
+            <a class="btn-back" href="abilities.html">Back</a>
+        </div>
+        
+    </header>
+    <main id="main__example" class="container">
+        <section class="example">
+            <h2 class="title__example">HTML</h2>
+            <div class="contenedor__ejemplo">
+                <TEXtarea class="codigo" readonly disabled>
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Animation loader</title>
+    </head>
+    <body>
+        <h1>Animation</h1>
+        <div class="kinetic"></div>
+    </body>
+</html> -->
+                </TEXtarea>
+            </div>
+            <div class="contenedor__ejemplo">
+                <h1>Animation</h1>
+            </div>
+        </section>
+        <section class="example">
+            <h2 class="title__example">CSS</h2>
+            <div class="contenedor__ejemplo">
+                <TEXtarea class="codigo" readonly disabled>
+            <!-- * { 
+                        box-sizing: border-box;
+                    }  
+                    body {
+                        background-color: #2c3e50;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100vh;
+                        overflow: hidden;
+                        margin: 0;
+                    }
+                    .kinetic {
+                        position: relative;
+                        height: 80px;
+                        width: 80px;
+                    }
+                    .kinetic::after,
+                    .kinetic::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        height: 0;
+                        border: 50px solid transparent;
+                        border-bottom-color: #fff;
+                        animation: rotateA 2s linear infinite 0.5s;
+                    }
+                    .kinetic::before {
+                        transform: rotate(90deg);
+                        animation: rotateB 2s linear infinite;
+                    }
+                    @keyframes rotateA {
+                        0%,
+                        25% {
+                            transform: rotate(0deg);
+                        }
+                        50%,
+                        75% {
+                            transform: rotate(180deg);
+                        }
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
+                    @keyframes rotateB {
+                        0%,
+                        25% {
+                            transform: rotate(90deg);
+                        }
+                        50%,
+                        75% {
+                            transform: rotate(270deg);
+                        }
+                        100% {
+                            transform: rotate(450deg);
+                        }
+                    } -->
+                </TEXtarea>
+            </div>
+            <div class="contenedor__ejemplo">
+                <div class="animacion"></div>
+            </div>
+        </section>
+    </main>
+    <footer id="home__footer">
+        <div>
+            <p class="fs-4">All rights reserved&copy;</p>
+        </div>
+        <div>
+            <a class="icon" href="https://www.linkedin.com/in/david-gutierrez-0b2229243/"><iconify-icon class="fs-4" icon="fa:linkedin-square"></iconify-icon></a>
+            <a class="icon" href="https://github.com/Daku16"><iconify-icon class="fs-4" icon="bytesize:github"></iconify-icon></a>
+        </div>
+        <a href="#home__cabecera"><iconify-icon class="btn-up fs-1" icon="carbon:direction-straight"></iconify-icon></a>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

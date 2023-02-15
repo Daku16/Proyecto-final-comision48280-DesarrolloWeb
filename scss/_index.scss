@@ -1,0 +1,119 @@
+@include formateo-global;
+#home__cabecera{
+    margin: 1rem 0;
+    min-width: 100%;
+    min-height: 10vh;
+    justify-items: center;
+    .div__logo{
+        .logo{
+            display: inline-block;
+            height: 6rem;
+            img{
+                width: 10rem;
+            }
+        } 
+        
+    }
+    .nav{
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 0;
+            li{
+                list-style: none;
+                transition: .5s;
+                &:hover{
+                    border-bottom: solid .05rem $color-principal1;
+                    transform: translateY(-.5rem);
+                    transition: .7s;
+                }
+                a{
+                    text-decoration: none;
+                    @include formateo-texto;
+                    &:hover{
+                        color: $color-principal2;
+                        text-shadow: .5rem .5rem 1rem $color-principal1;
+                    }
+                }
+            }
+        }
+    }
+}
+.activo{
+    padding: .5rem;
+    border-bottom: solid .05rem $color-principal1;
+    border-radius: 1rem;
+    box-shadow: inset 0 0 1rem $color-principal1;
+    a{
+        color: $color-principal2;
+    }
+}
+
+#main{
+    @include main;
+    div{
+        h1{
+            color: $color-principal1;
+            animation: fadeIn;
+            animation-duration: 5s;
+            text-shadow: .5rem .5rem .5rem $color-principal1;
+            font-size: 4rem;
+        }
+        h2{
+            font-size: 2.5rem;
+            color: $color-principal2;
+            animation: subtitle;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            @keyframes subtitle {
+                0%{
+                    text-shadow: 0 0 .5rem $color-principal2;
+                }
+                50%{
+                    text-shadow: 0 0 1rem $color-principal2;
+                }
+                100%{
+                    text-shadow: 0 0 .5rem $color-principal2;
+                }
+            }
+        }
+    }
+    .contenedor__logo{
+        .logo__main{
+            border-bottom: solid $color-principal1 .1rem;
+            border-left: solid $color-principal1 .1rem;
+            padding: .5rem;
+        }
+        
+    }
+}
+#home__footer{
+    display: flex;
+    margin-top: auto;
+    padding: 3rem 0;
+    min-height: 5vh;
+    justify-content: space-around;
+    align-items: center;
+    p{
+        margin: 0;
+    }
+    .icon{
+        color: $color-texto;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px){
+    #home__cabecera{
+        .nav{
+            ul{
+                li{
+                    a{
+                        @include formateo-texto-sm;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
